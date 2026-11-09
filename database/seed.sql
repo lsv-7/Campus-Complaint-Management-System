@@ -1,0 +1,3 @@
+USE campuscare;
+INSERT IGNORE INTO categories(category_name,description) VALUES ('Infrastructure','Classrooms, buildings, and campus facilities'),('Hostel','Residence and accommodation'),('Transportation','Campus transport and parking'),('Canteen','Food services and dining'),('Library','Library resources and facilities'),('Academics','Teaching and academic services'),('IT Services','Network, systems, and technology'),('Other','Other campus concerns');
+INSERT IGNORE INTO departments(department_name,contact_person) VALUES ('Facilities','Facilities Desk'),('Student Affairs','Student Affairs Office'),('Transport','Transport Office'),('Dining Services','Catering Office'),('IT Support','IT Help Desk'),('Library Services','Library Desk');

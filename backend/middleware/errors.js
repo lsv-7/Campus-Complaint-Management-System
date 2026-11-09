@@ -1,0 +1,2 @@
+export function notFound(req,res){res.status(404).json({message:'Route not found'})}
+export function errors(err,req,res,next){if(err.code==='ER_DUP_ENTRY')return res.status(409).json({message:'A record with that unique value already exists'});if(err.code==='ER_DATA_TOO_LONG'||err.code==='ER_TRUNCATED_WRONG_VALUE')return res.status(400).json({message:'One or more values exceed the allowed format or length'});console.error(err);res.status(err.status||500).json({message:err.status?err.message:'Server error'})}
